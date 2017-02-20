@@ -1,0 +1,80 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="pic_tag.js"></script>
+
+<style type="text/css">
+	.image-container{
+		position: relative;
+		transition-duration: 1s;
+	}
+	.tag-group{
+		position: absolute;
+	}
+	.pic-tag{
+		position: relative;
+		background: white;
+		height: 10px;
+		width: 10px;
+		display: none;
+	}
+	.tag-text{
+		position: relative;
+		background: white;
+		display: none;
+	}
+	.start{
+		left: 0px;
+		top: 0px;
+	}
+	.pos{
+		left:400px;
+		top: 400px;
+	}
+</style>
+
+<div id="the-whole-modal">
+	<div class="image-container start">
+		<img class="hover-tagged" src="pic.jpg">
+		<div id="tag-group-1" class="tag-group" style="top: 50px; left: 50px">
+			<a href="#">
+				<div class="pic-tag"></div>
+				<div class="tag-text">Hello</div>
+			</a>
+		</div>
+		<div id="tag-group-2" class="tag-group" style="top: 100px; left: 100px">
+			<div class="pic-tag"></div>
+			<div class="tag-text">Hello</div>
+		</div>
+		<div id="side-links">
+			<a href="#" class="side-link" target="tag-group-1">
+				side link 1
+			</a>
+			<br>
+			<a href="#" class="side-link" target="tag-group-2">
+				side link 2
+			</a>
+		</div>
+	</div>
+	<div class="image-container start">
+		<img class="hover-tagged " src="pic.jpg">
+		<div id="tag-group-3" class="tag-group" style="top: 50px; left: 50px">
+			<a href="#">
+				<div class="pic-tag"></div>
+				<div class="tag-text">Hello</div>
+			</a>
+		</div>
+		<div id="tag-group-4" class="tag-group" style="top: 100px; left: 100px">
+			<div class="pic-tag"></div>
+			<div class="tag-text">Hello</div>
+		</div>
+		<div id="side-links">
+			<a href="#" class="side-link" target="tag-group-3">
+				side link 1
+			</a>
+			<br>
+			<a href="#" class="side-link" target="tag-group-4">
+				side link 2
+			</a>
+		</div>
+	</div>
+	<a class="move-button">move</a>
+</div>
